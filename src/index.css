@@ -1,0 +1,186 @@
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: lightblue;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #2563eb;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #dbeafe;
+}
+
+.logout-button {
+  padding: 8px 12px;
+  color: white;
+  background-color: #dc2626;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 5px;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-link,
+  .logout-button {
+    padding: 7px 9px;
+    font-size: 13px;
+  }
+}
+
+/* Home page */
+.home {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #eff6ff;
+  text-align: center;
+}
+
+.home h1 {
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.home p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.info {
+  background-color: white;
+  padding: 20px;
+  margin: 25px auto;
+  border-radius: 10px;
+}
+
+.info h2,
+.info h3 {
+  margin: 10px;
+  color: #1e40af;
+}
+
+/* Home services */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.home a {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.home a:hover {
+  background-color: darkblue;
+}
+
+/* Home responsive */
+@media (max-width: 600px) {
+  .home {
+    padding: 15px;
+  }
+
+  .home h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Patients and Doctors container */
+.patients-container,
+.doctors-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+/* Medium devices: 2 details per row */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .patients-container,
+  .doctors-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small devices: 1 detail per row */
+@media (max-width: 600px) {
+  .patients-container,
+  .doctors-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .patient-item,
+  .doctor-item {
+    padding: 12px 5px;
+  }
+}
+.searchbox{
+  padding: 5px;
+  margin:20px;
+  width: 30%;
+}
+.back{
+  background-color: lightblue;
+}
+.signup{
+  padding: 5px;
+  margin: 15px;
+}
